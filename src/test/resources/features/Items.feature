@@ -11,8 +11,7 @@ Feature: Items
     Then  check the amount of "Brocolli - 1 Kg" is 2 kg
 
 
-
-  Scenario: Check specified items and their prices
+  Scenario: Check the specified items and their prices
 
 
 
