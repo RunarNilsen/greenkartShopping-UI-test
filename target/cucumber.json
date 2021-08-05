@@ -1,0 +1,191 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-08-05T17:41:39.581Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3384022000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.greenkart.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Select specified Items and change their amount",
+        "description": "",
+        "id": "items;select-specified-items-and-change-their-amount",
+        "after": [
+          {
+            "result": {
+              "duration": 254781000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.greenkart.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5061072000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "navigate to the homepage",
+            "match": {
+              "location": "com.greenkart.step_definitions.ItemsStepDefinitions.navigate_to_the_homepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 74383000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "go to \"Brocolli - 1 Kg\" item",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Brocolli - 1 Kg\"",
+                  "offset": 6
+                }
+              ],
+              "location": "com.greenkart.step_definitions.ItemsStepDefinitions.go_to_item(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 42567000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "check the default amount of \"Brocolli - 1 Kg\" is 1 kg",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Brocolli - 1 Kg\"",
+                  "offset": 28
+                },
+                {
+                  "val": "1",
+                  "offset": 49
+                }
+              ],
+              "location": "com.greenkart.step_definitions.ItemsStepDefinitions.check_the_default_amount_of_is_kg(java.lang.String,java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 182685000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "increase the \"Brocolli\" amount by 2",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Brocolli\"",
+                  "offset": 13
+                },
+                {
+                  "val": "2",
+                  "offset": 34
+                }
+              ],
+              "location": "com.greenkart.step_definitions.ItemsStepDefinitions.increase_the_amount_by(java.lang.String,java.lang.Integer)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 25315000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "check the amount of \"Brocolli - 1 Kg\" is 3 kg",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Brocolli - 1 Kg\"",
+                  "offset": 20
+                },
+                {
+                  "val": "3",
+                  "offset": 41
+                }
+              ],
+              "location": "com.greenkart.step_definitions.ItemsStepDefinitions.check_the_amount_of_is_kg(java.lang.String,java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 96134000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "decrease the \"Brocolli\" amount by 1",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Brocolli\"",
+                  "offset": 13
+                },
+                {
+                  "val": "1",
+                  "offset": 34
+                }
+              ],
+              "location": "com.greenkart.step_definitions.ItemsStepDefinitions.decrease_the_amount_by(java.lang.String,java.lang.Integer)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 25371000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "check the amount of \"Brocolli - 1 Kg\" is 2 kg",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Brocolli - 1 Kg\"",
+                  "offset": 20
+                },
+                {
+                  "val": "2",
+                  "offset": 41
+                }
+              ],
+              "location": "com.greenkart.step_definitions.ItemsStepDefinitions.check_the_amount_of_is_kg(java.lang.String,java.lang.Integer)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@wip"
+          }
+        ]
+      }
+    ],
+    "name": "Items",
+    "description": "",
+    "id": "items",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/Items.feature",
+    "tags": []
+  }
+]
