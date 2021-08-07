@@ -59,6 +59,15 @@ public class ItemsStepDefinitions {
     }
 
 
+    @Then("check the default price of {string} is {string}")
+    public void check_the_default_price_of_is(String product, String price) {
+        ItemsPage itemsPage = new ItemsPage();
+        String actualPrice = itemsPage.getProductPrice(product);
+        Assert.assertEquals("verify price:",price, actualPrice);
+
+    }
+
+
 
 
 
