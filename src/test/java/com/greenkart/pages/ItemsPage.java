@@ -30,9 +30,6 @@ public class ItemsPage extends BasePage{
 
 
 
-
-
-
     public String  navigateToProduct(String productName){
         // It navigates to a product and get and return the name of it.
         WebElement productElement = Driver.get().findElement(By.xpath("//h4[contains(text(), '" + productName + "')]"));
@@ -79,6 +76,8 @@ public class ItemsPage extends BasePage{
             }
         }
     }
+
+
 
 
 

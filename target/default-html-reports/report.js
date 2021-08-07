@@ -1,11 +1,11 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/Items.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/Basket.feature");
 formatter.feature({
-  "name": "Items",
+  "name": "Basket",
   "description": "",
   "keyword": "Feature"
 });
 formatter.scenario({
-  "name": "Select specified Items and change their amount",
+  "name": "Delete items in the basket",
   "description": "",
   "keyword": "Scenario",
   "tags": [
@@ -38,51 +38,64 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "check the default amount of \"Brocolli - 1 Kg\" is 1 kg",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "com.greenkart.step_definitions.ItemsStepDefinitions.check_the_default_amount_of_is_kg(java.lang.String,java.lang.Integer)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "increase the \"Brocolli\" amount by 2",
+  "name": "click the add to chart button of \"Brocolli - 1 Kg\"",
   "keyword": "When "
 });
 formatter.match({
-  "location": "com.greenkart.step_definitions.ItemsStepDefinitions.increase_the_amount_by(java.lang.String,java.lang.Integer)"
+  "location": "com.greenkart.step_definitions.BasketStepDefinitions.click_the_add_to_chart_button_of(java.lang.String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "check the amount of \"Brocolli - 1 Kg\" is 3 kg",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "com.greenkart.step_definitions.ItemsStepDefinitions.check_the_amount_of_is_kg(java.lang.String,java.lang.Integer)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "decrease the \"Brocolli\" amount by 1",
+  "name": "go to \"Cauliflower - 1 Kg\" item",
   "keyword": "When "
 });
 formatter.match({
-  "location": "com.greenkart.step_definitions.ItemsStepDefinitions.decrease_the_amount_by(java.lang.String,java.lang.Integer)"
+  "location": "com.greenkart.step_definitions.ItemsStepDefinitions.go_to_item(java.lang.String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "check the amount of \"Brocolli - 1 Kg\" is 2 kg",
+  "name": "click the add to chart button of \"Cauliflower - 1 Kg\"",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "com.greenkart.step_definitions.BasketStepDefinitions.click_the_add_to_chart_button_of(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "navigate to the chart",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "com.greenkart.step_definitions.ItemsStepDefinitions.check_the_amount_of_is_kg(java.lang.String,java.lang.Integer)"
+  "location": "com.greenkart.step_definitions.BasketStepDefinitions.navigate_to_the_chart()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "delete the \"Cauliflower - 1 Kg\" item from the cart",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "com.greenkart.step_definitions.BasketStepDefinitions.delete_the_item_from_the_cart(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the product should be in the basket",
+  "rows": [
+    {}
+  ],
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "com.greenkart.step_definitions.BasketStepDefinitions.the_product_should_be_in_the_basket(java.util.List\u003cjava.lang.String\u003e)"
 });
 formatter.result({
   "status": "passed"
